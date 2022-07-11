@@ -74,7 +74,7 @@ while True:
         text3=driver.find_element(by=By.XPATH,value='/html/body/div[2]/div/div/div[1]/div[1]/div[2]/div[2]/div/div/div/div/div[2]/div[2]/div/div[1]/div/div/div/div/div[2]/div[2]/div[1]/div').text
         
         debug+=1
-        data.append([text1,text2,text3])
+        # data.append([text1,text2,text3])
         
         debug+=1
         open('output.json','a', encoding=coding).write('@@@@@@@@@@@@@@@@@@@\n'+text1+'\n#####\n'+text2+'\n#####\n'+text3+'\n#####\n')
