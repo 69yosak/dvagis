@@ -6,6 +6,7 @@ arr=[]
 
 
 
+import gc
 import json
 from random import randint
 import time
@@ -87,7 +88,8 @@ while True:
             # arr[1]        
             nowRest=0
             driver.find_element(by=By.XPATH,value=('/html/body/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[2]')).click()
-
+            gc.collect()
+   
         
         
     # except:
